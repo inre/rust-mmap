@@ -53,7 +53,6 @@ pub struct MemoryMap {
 }
 
 /// Type of memory map
-#[allow(raw_pointer_derive)]
 #[derive(Copy, Clone)]
 pub enum MemoryMapKind {
     /// Virtual memory map. Usually used to change the permissions of a given
@@ -66,7 +65,6 @@ pub enum MemoryMapKind {
 }
 
 /// Options the memory map is created with
-#[allow(raw_pointer_derive)]
 #[derive(Copy, Clone)]
 pub enum MapOption {
     /// The memory should be readable
